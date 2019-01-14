@@ -18,7 +18,7 @@ export default () =>
                         <div className="row gap-y">
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/ruby_card">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/rubyCard">
                                     <p><i className="icon-mobile lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Ruby Card</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>

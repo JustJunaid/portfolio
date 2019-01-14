@@ -7,27 +7,27 @@ export default class Navbar extends Component {
       <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
 
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">☰</button>
-          <Link class="navbar-brand" to="/">
-            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="logo" />
-            <img class="logo-light" src="../assets/img/logo-light.png" alt="logo" />
+        <div className="navbar-left">
+          <button className="navbar-toggler" type="button">☰</button>
+          <Link className="navbar-brand" to="/">
+            <img className="logo-dark" src="../assets/img/logo-dark.png" alt="logo" />
+            <img className="logo-light" src="../assets/img/logo-light.png" alt="logo" />
           </Link>
         </div>
 
-        <section class="navbar-mobile">
-          <nav class="nav nav-navbar ml-auto">
-            <Link class="nav-link" to="/ruby_card">Smart Card</Link>
-            <Link class="nav-link" to="/campus_leader">Campus Leader</Link>
-            <Link class="nav-link" to="/career">Careers</Link>
-            <Link class="nav-link" to="/about">About Us</Link>
-            <Link class="nav-link" to="/contact">Contact Us</Link>
+        <section className="navbar-mobile">
+          <nav className="nav nav-navbar ml-auto">
+            <Link className="nav-link" to="/rubyCard">Smart Card</Link>
+            <Link className="nav-link" to="/campusLeader">Campus Leader</Link>
+            <Link className="nav-link" to="/career">Careers</Link>
+            <Link className="nav-link" to="/about">About Us</Link>
+            <Link className="nav-link" to="/contact">Contact Us</Link>
           </nav>
 
-          <span class="navbar-divider"></span>
+          <span className="navbar-divider"></span>
 
           <div>
-            <Link class="btn btn-sm btn-round btn-primary ml-lg-4 mr-2" to="#">Download App</Link>
+            <Link className="btn btn-sm btn-round btn-primary ml-lg-4 mr-2" to="#">Download App</Link>
           </div>
         </section>
 
