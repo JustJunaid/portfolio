@@ -33,7 +33,7 @@ export default function campusLeader() {
                         <p className="feature-icon text-warning"><i className="icon-browser"></i></p>
                         <h5>Know your template</h5>
                     </div>
-                    <ol className="timeline timeline-horizontal" style={{ marginTop: '60px;' }}>
+                    <ol className="timeline timeline-horizontal" style={{ marginTop: '60px' }}>
                         <li className="timeline-item">
                             <h6><strong>Step 1</strong></h6>
 
@@ -91,7 +91,7 @@ export default function campusLeader() {
                     </div>
                 </div>
 
-                <section className="section overflow-hidden" style={{ paddingTop: '0;' }}>
+                <section className="section overflow-hidden" style={{ paddingTop: '0' }}>
                     <div className="container">
                         <header className="section-header">
                             <small>Video</small>
@@ -115,7 +115,7 @@ export default function campusLeader() {
                     </div>
 
                 </section>
-                <div className="section" style={{paddingTop:'0;'}}>
+                <div className="section" style={{paddingTop:'0'}}>
                     <div className="container">
 
                         <div className="row">

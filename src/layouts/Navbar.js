@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import logoLight from '../../static/assets/img/logo-light.png'
+import logoDark from '../../static/assets/img/logo-dark.png'
 
 export default class Navbar extends Component {
   render() {
@@ -10,8 +12,8 @@ export default class Navbar extends Component {
         <div className="navbar-left">
           <button className="navbar-toggler" type="button">☰</button>
           <Link className="navbar-brand" to="/">
-            <img className="logo-dark" src="../assets/img/logo-dark.png" alt="logo" />
-            <img className="logo-light" src="../assets/img/logo-light.png" alt="logo" />
+            <img className="logo-dark" src={logoDark} alt="logo" />
+            <img className="logo-light" src={logoLight} alt="logo" />
           </Link>
         </div>
 

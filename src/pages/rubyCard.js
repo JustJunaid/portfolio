@@ -24,7 +24,7 @@ export default function rubyCard() {
                         </div>
                     </section>
 
-                    <section className="section" style={{ padding: '0;' }}>
+                    <section className="section" style={{ padding: '0' }}>
                         <div className="container">
 
                             <div className="row gap-y align-items-center py-7">
