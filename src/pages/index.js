@@ -18,7 +18,7 @@ export default () =>
                         <div className="row gap-y">
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/rubyCard">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/ruby_card">
                                     <p><i className="icon-mobile lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Ruby Card</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -27,7 +27,7 @@ export default () =>
 
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/get_loans.html">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/get_loans">
                                     <p><i className="icon-gears lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Get Loans</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -54,7 +54,7 @@ export default () =>
 
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/get_deals.html">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/get_deals">
                                     <p><i className="icon-browser lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Get Deals</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -78,14 +78,14 @@ export default () =>
             <main className="main-content">
                 <section className="section bg-gray" style={{ padding: '3rem 0' }} >
                     <div className="container">
-                        <h3 style={{ marginBottom: '37px' }} className="text-center"><Link to="post-2.html">How The App Works</Link></h3>
+                        <h3 style={{ marginBottom: '37px' }} className="text-center"><Link to="#">How The App Works</Link></h3>
                         <div className="row gap-y">
 
                             <div className="col-lg-4">
                                 <div className="card card-body border text-center">
                                     <p className="my-5"><i className="icon-layers lead-8 text-lighter"></i></p>
                                     <h5>Wet Sign Procedure.</h5>
-                                    <p><Link className="small-3 fw-600" to="/read_more.html">Read more <i className="fa fa-angle-right small-5 pl-1"></i></Link></p>
+                                    <p><Link className="small-3 fw-600" to="/read_more">Read more <i className="fa fa-angle-right small-5 pl-1"></i></Link></p>
                                 </div>
                             </div>
 
@@ -110,7 +110,7 @@ export default () =>
                         </div>
 
                         <p className="text-center mt-7">
-                            <Link className="btn btn-danger btn-round" to="/how_it_works.html">Read more</Link>
+                            <Link className="btn btn-danger btn-round" to="/how_it_works">Read more</Link>
                         </p>
 
                     </div>
@@ -128,7 +128,7 @@ export default () =>
                             <div className="col-md-4 mx-auto order-md-first">
                                 <h3>Credit Score</h3>
                                 <p>Keep your company’s data where it belongs with extensive security and administration features.</p>
-                                <Link to="/read_more.html">Read More <i className="ti-angle-right fs-10 ml-1"></i></Link>
+                                <Link to="/read_more">Read More <i className="ti-angle-right fs-10 ml-1"></i></Link>
                             </div>
 
                         </div>

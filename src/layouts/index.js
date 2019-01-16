@@ -13,7 +13,3 @@ const index = ({ children }) => {
 }
 
 export default index
-
-
-
-
