@@ -9,7 +9,7 @@ export default class Footer extends Component {
             <div className="row gap-y align-items-center">
 
                 <div className="col-6 col-lg-3">
-                    <Link to="index.html"><img src="assets/img/logo-dark.png" alt="logo" />=</Link>
+                    <Link to="index.html"><img src="assets/img/logo-dark.png"/>=</Link>
                 </div>
 
                 <div className="col-6 col-lg-3 text-right order-lg-last">

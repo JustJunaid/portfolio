@@ -8,7 +8,8 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <link rel="stylesheet" href="assets/css/page.min.css"/>
+          <link rel="stylesheet" href="/assets/css/page.min.css"/>
+          {console.log(process.cwd())}
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -23,7 +24,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="assets/js/page.min.js"></script>
+          <script src="/assets/js/page.min.js"></script>
         </body>
       </html>
     )

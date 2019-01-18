@@ -14,7 +14,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="/deal_details"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="/deal_details"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">News</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">We relocated our office to Link new designed garage</Link></h5>
@@ -25,7 +25,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">Marketing</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">Top 5 brilliant content marketing strategies</Link></h5>
@@ -36,7 +36,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">Design</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">Best practices for minimalist design with example</Link></h5>
@@ -47,7 +47,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">Hiring</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">Congratulate and thank to Maryam for joining our team</Link></h5>
@@ -58,7 +58,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">Product</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">New published books to read by Link product designer</Link></h5>
@@ -69,7 +69,7 @@ const get_deals = () => {
 
       <div className="col-md-6 col-lg-4">
         <div className="card d-block border hover-shadow-6 mb-6">
-          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg" alt="Card image cap"/></Link>
+          <Link to="#"><img className="card-img-top" src="../assets/img/get_deals/1.jpg"/></Link>
           <div className="p-6 text-center">
             <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">Management</Link></p>
             <h5 className="mb-0"><Link className="text-dark" to="#">This is why it's time to ditch dress codes at work</Link></h5>

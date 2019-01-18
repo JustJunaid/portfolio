@@ -145,7 +145,7 @@ const about = () => {
                         <div className="row gap-y">
                             <div className="col-md-4 team-2">
                                 <Link to="#">
-                                    <img src={team1} alt="..." />
+                                    <img src={team1} />
                                 </Link>
                                 <h5>Morgan Guadis</h5>
                                 <small>Co-Founder &amp; CEO</small>
@@ -162,7 +162,7 @@ const about = () => {
 
                             <div className="col-md-4 team-2">
                                 <Link to="#">
-                                    <img src={team2} alt="..." />
+                                    <img src={team2} />
                                 </Link>
                                 <h5>John Senating</h5>
                                 <small>Co-Founder &amp; CTO</small>
@@ -179,7 +179,7 @@ const about = () => {
 
                             <div className="col-md-4 team-2">
                                 <Link to="#">
-                                    <img src={team3} alt="..." />
+                                    <img src={team3} />
                                 </Link>
                                 <h5>Sandi Hormez</h5>
                                 <small>Director</small>

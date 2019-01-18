@@ -36,7 +36,7 @@ export default () =>
 
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="#">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/pay_fees">
                                     <p><i className="icon-tools lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Pay Fees</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -45,7 +45,7 @@ export default () =>
 
 
                             <div className="col-md-6 col-lg-4">
-                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="#">
+                                <Link className="card card-body border hover-shadow-6 text-center py-6" to="/shop_online">
                                     <p><i className="icon-recycle lead-6 text-muted"></i></p>
                                     <h5 className="card-title text-dark mb-0">Shop From Online Merchants</h5>
                                     <p className="text-center text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>

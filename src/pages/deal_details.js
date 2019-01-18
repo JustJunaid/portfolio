@@ -20,7 +20,7 @@ export default () => {
                             </div>
 
                             <div className="col-md-6 text-center order-md-first">
-                                <img src={img_get_deals} alt="..." />
+                                <img src={img_get_deals} />
                             </div>
                         </div>
 

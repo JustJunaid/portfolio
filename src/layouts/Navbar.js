@@ -12,8 +12,8 @@ export default class Navbar extends Component {
         <div className="navbar-left">
           <button className="navbar-toggler" type="button">☰</button>
           <Link className="navbar-brand" to="/">
-            <img className="logo-dark" src={logoDark} alt="logo" />
-            <img className="logo-light" src={logoLight} alt="logo" />
+            <img className="logo-dark" src={logoDark}/>
+            <img className="logo-light" src={logoLight} />
           </Link>
         </div>
 

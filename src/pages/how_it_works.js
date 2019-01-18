@@ -94,12 +94,6 @@ const how_it_works = () => {
 
                         </div>
 
-
-                        <nav className="flexbox mt-6">
-                            <Link className="btn btn-white disabled"><i className="ti-arrow-left fs-9 mr-2"></i> Newer</Link>
-                            <Link className="btn btn-white" to="#">Older <i className="ti-arrow-right fs-9 ml-2"></i></Link>
-                        </nav>
-
                     </div>
                 </section>
 
