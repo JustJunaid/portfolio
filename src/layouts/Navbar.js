@@ -1,40 +1,116 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import logoLight from '../../static/assets/img/logo-light.png'
-import logoDark from '../../static/assets/img/logo-dark.png'
+import React from 'react';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import { FiMenu } from 'react-icons/fi';
+import 'tachyons'
+import './styles/custom.tachyons.css';
 
-export default class Navbar extends Component {
-  render() {
+
+const MultiLink = (props) => {
+  const internal = /^\/(?!\/)/.test(props.to);
+  let result;
+  if (internal) {
+    result = (<Link to={props.to} className={props.className}>{props.children}</Link>)
+  } else {
+    result = (<a href={props.to} className={props.className}>{props.children}</a>)
+  }
+  return result;
+}
+
+const SliderMenu = (props) => {
+  // Prevents a flash of visible menu items when the entrance is triggered
+  let extraClasses;
+  if (props.active === null) {
+    extraClasses = " dn";
+  } else {
+    extraClasses = (props.active ? " fadeIn" : " fadeOut");
+  }
+  return (
+    <div
+      className={
+        "flex flex-column justify-center items-center bg-washed-blue fixed top z-max w-100 ease" + (props.active ? " vh-93" : " h0")
+      }>
+      <Link
+        to="/"
+        className={"display ttu tracked dark-gray f3 no-underline menu__item pv5" + extraClasses}
+      >{props.siteTitle}
+      </Link>
+      {props.extraLinks.map(navLink => (
+        <MultiLink
+          to={navLink.to}
+          className={"sans-serif ttu mid-gray f5 no-underline menu__item pv3" + extraClasses}
+        >{navLink.name}
+        </MultiLink>
+      ))}
+      <Link
+        to="/about"
+        className={"sans-serif ttu mid-gray f5 no-underline menu__item pv3" + extraClasses}
+      >About</Link>
+    </div>
+  )
+}
+
+
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super();
+    this.state = {
+      // Null rather than false to check for initialization
+      menuToggle: null,
+    };
+    this.toggleMenu = this.toggleMenu.bind(this);
+  };
+
+  toggleMenu(event) {
+    this.setState({
+      menuToggle: !this.state.menuToggle,
+    })
+  };
+
+  render () {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark">
-      <div className="container">
-
-        <div className="navbar-left">
-          <button className="navbar-toggler" type="button">☰</button>
-          <Link className="navbar-brand" to="/">
-            <img className="logo-dark" src={logoDark}/>
-            <img className="logo-light" src={logoLight} />
-          </Link>
-        </div>
-
-        <section className="navbar-mobile">
-          <nav className="nav nav-navbar ml-auto">
-            <Link className="nav-link" to="/ruby_card">Smart Card</Link>
-            <Link className="nav-link" to="/campus_leader">Campus Leader</Link>
-            <Link className="nav-link" to="/career">Careers</Link>
-            <Link className="nav-link" to="/about">About Us</Link>
-            <Link className="nav-link" to="/contact">Contact Us</Link>
-          </nav>
-
-          <span className="navbar-divider"></span>
-
-          <div>
-            <Link className="btn btn-sm btn-round btn-primary ml-lg-4 mr-2" to="#">Download App</Link>
+      <StaticQuery
+        query={graphql`
+        query {
+          site {
+            siteMetadata {
+              navbarLinks {
+                to
+                name
+              }
+              siteTitle: title
+              mailChimpUrl
+            }
+          }
+        }
+      `}
+      render={data => (
+        <React.Fragment>
+          <div
+            className="bg-white flex w-100 vh-7 pv3 flex justify-between items-center top-0 z-999 bb b--light-gray"
+            style={{position: "sticky"}}>
+            <div className="w-100 mw8 flex justify-between justify-around-l items-center ph4 pa2-ns">
+              <button
+                className="ttu tracked dark-gray f4 no-underline bn bg-transparent pointer"
+                onClick={this.toggleMenu}>
+                <FiMenu />
+              </button>
+              <Link to="/" className="display ttu tracked dark-gray f4 no-underline">{data.site.siteMetadata.siteTitle}</Link>
+              <Link to="/ruby_card" className="sans-serif ttu mid-gray f5 no-underline dn dib-l">SMART CARD</Link>
+              {data.site.siteMetadata.navbarLinks.map(navLink => (
+                <MultiLink to={navLink.to} className="sans-serif ttu mid-gray f5 no-underline dn dib-l">{navLink.name}</MultiLink>
+              ))}
+            </div>
+            <div className="dn w-100 mw5 flex-l justify-around items-center">
+              <span className="sans-serif mid-gray dn dib-l">|</span>
+              <Link to="#" className="btn btn-xs btn-round btn-danger">DOWNLOAD NOW</Link>
+            </div>
           </div>
-        </section>
-
-      </div>
-    </nav>
+          <SliderMenu
+            active={this.state.menuToggle}
+            extraLinks={data.site.siteMetadata.navbarLinks}
+            siteTitle={data.site.siteMetadata.siteTitle}/>
+        </React.Fragment>
+      )} />
     )
   }
 }
