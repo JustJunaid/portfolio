@@ -19,11 +19,11 @@ export default class Navbar extends Component {
 
         <section className="navbar-mobile">
           <nav className="nav nav-navbar ml-auto">
-            <Link className="nav-link" to="/ruby_card">Smart Card</Link>
-            <Link className="nav-link" to="/campus_leader">Campus Leader</Link>
-            <Link className="nav-link" to="/career">Careers</Link>
-            <Link className="nav-link" to="/about">About Us</Link>
-            <Link className="nav-link" to="/contact">Contact Us</Link>
+            <a className="nav-link" href="/ruby_card">Smart Card</a>
+            <a className="nav-link" href="/campus_leader">Campus Leader</a>
+            <a className="nav-link" href="/career">Careers</a>
+            <a className="nav-link" href="/about">About Us</a>
+            <a className="nav-link" href="/contact">Contact Us</a>
           </nav>
 
           <span className="navbar-divider"></span>
