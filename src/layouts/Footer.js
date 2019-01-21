@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
+/* eslint-disable */
+
 export default class Footer extends Component {
   render() {
     return (

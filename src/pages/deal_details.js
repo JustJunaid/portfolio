@@ -2,6 +2,8 @@ import React from 'react'
 import img_get_deals from '../../static/assets/img/get_deals/1.jpg'
 import Layout from '../layouts/index'
 
+/* eslint-disable */
+
 export default () => {
     return (
         <Layout>

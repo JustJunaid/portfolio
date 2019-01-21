@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import logoLight from '../../static/assets/img/logo-light.png'
 import logoDark from '../../static/assets/img/logo-dark.png'
 
+/* eslint-disable */
+
 export default class Navbar extends Component {
   render() {
     return (

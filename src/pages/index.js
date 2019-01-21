@@ -1,15 +1,16 @@
 import React from "react"
 import Link from 'gatsby-link'
 import Layout from '../layouts/index'
+import { graphql } from 'gatsby'
 
-export default () =>
+export default ({data}) =>
     <Layout>
         <div>
             <header>
                 <section className="section">
                     <div className="container">
                         <header className="section-header">
-                            <h2>Our Services</h2>
+                            <h2> {data.site.siteMetadata.title} </h2>
                             <hr />
                             <p className="lead">Over Link dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more.</p>
                         </header>
@@ -167,3 +168,19 @@ export default () =>
             </main>
         </div>
     </Layout>
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author
+        description
+        socialProfiles {
+          type
+          url
+        }
+      }
+    }
+  }
+`;

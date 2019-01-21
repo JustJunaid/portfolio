@@ -5,6 +5,8 @@ import team1 from '../../static/assets/img/team/1.jpg'
 import team2 from '../../static/assets/img/team/2.jpg'
 import team3 from '../../static/assets/img/team/3.jpg'
 
+/* eslint-disable */
+
 const about = () => {
     return (
         <Layout>
