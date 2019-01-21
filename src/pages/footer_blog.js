@@ -30,7 +30,7 @@ const footer_blog = () => {
   
               <div className="col-md-6 col-lg-4">
                 <div className="card d-block border hover-shadow-6 mb-6">
-                  <Link to="#"><img className="card-img-top" src="../assets/img/how_it_works/1.jpg"/></Link>
+                  <Link to="/blog1"><img className="card-img-top" src="../assets/img/how_it_works/1.jpg"/></Link>
                   <div className="p-6 text-center">
                     <p><Link className="small-5 text-lighter text-uppercase ls-2 fw-400" to="#">News</Link></p>
                     <h5 className="mb-0"><Link className="text-dark" to="#">We relocated our office to Link new designed garage</Link></h5>

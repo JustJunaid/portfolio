@@ -2,13 +2,16 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import logoLight from '../../static/assets/img/logo-light.png'
 import logoDark from '../../static/assets/img/logo-dark.png'
+import { StaticQuery, graphql } from 'gatsby';
 
 /* eslint-disable */
 
-export default class Navbar extends Component {
-  render() {
-    return (
-      <nav className="navbar navbar-expand-lg navbar-dark">
+export default function Navbar() {
+  return (
+    <StaticQuery 
+      query={navlinkQuery}
+      render = {data => (
+        <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container">
 
         <div className="navbar-left">
@@ -21,11 +24,9 @@ export default class Navbar extends Component {
 
         <section className="navbar-mobile">
           <nav className="nav nav-navbar ml-auto">
-            <a className="nav-link" href="/ruby_card">Smart Card</a>
-            <a className="nav-link" href="/campus_leader">Campus Leader</a>
-            <a className="nav-link" href="/career">Careers</a>
-            <a className="nav-link" href="/about">About Us</a>
-            <a className="nav-link" href="/contact">Contact Us</a>
+            {data.site.siteMetadata.navBar.links.map(element => (
+              <a href={element.url} className="nav-link">{element.text}</a>
+            ))}
           </nav>
 
           <span className="navbar-divider"></span>
@@ -37,6 +38,21 @@ export default class Navbar extends Component {
 
       </div>
     </nav>
-    )
-  }
+    )} />
+  )
 }
+
+const navlinkQuery = graphql`
+  query {
+      site {
+        siteMetadata {
+          navBar {
+            links {
+              text
+              url
+            }
+          }
+        }
+      }
+  }
+`
