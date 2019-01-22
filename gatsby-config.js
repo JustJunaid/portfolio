@@ -12,5 +12,18 @@ try {
 console.log(JSON.stringify(siteMetadata, null, 2))
 
 module.exports = {
-    siteMetadata
+    siteMetadata,
+    plugins: [
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          path: `${__dirname}/content`,
+          name: 'markdown',
+          options: {
+            extensions: ['.md']
+          }
+        }
+      },
+      `gatsby-transformer-remark`,
+    ]
 }
