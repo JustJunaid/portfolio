@@ -1,6 +1,13 @@
 import React from "react"
 import Link from "gatsby-link"
 import Layout from "../layouts/index"
+import styled from "styled-components"
+
+const H2 = styled.h2`
+  font-size: 2.10938rem;
+  color: #323d47;
+  letter-spacing: 0.5px;
+`
 
 export default () => (
   <Layout>

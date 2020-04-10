@@ -1,5 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
+
+const Body = styled.body`
+  box-sizing: border-box;
+
+  &::selection {
+    background: #74b4ff;
+    color: #fff;
+  }
+`
 
 export default class HTML extends React.Component {
   render() {
@@ -8,14 +18,14 @@ export default class HTML extends React.Component {
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <link rel="stylesheet" href="/assets/css/page.min.css"/>
+          <link rel="stylesheet" href="/assets/css/page.min.css" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <Body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
             key={`body`}
@@ -24,7 +34,7 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
           <script src="/assets/js/page.min.js"></script>
-        </body>
+        </Body>
       </html>
     )
   }
