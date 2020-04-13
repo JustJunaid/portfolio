@@ -6,8 +6,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-lg-6 col-sm-12">
           <p class="small">
-            Copyright © 2020 <a href="http://thetheme.io">TheThemeio</a>, All
-            rights reserved.
+            Made with ❤️ by Junaid Choudhary | All rights reserved.
           </p>
         </div>
         <div className="col-lg-6 col-sm-12 text-center text-md-right">
@@ -26,7 +25,11 @@ const Footer = () => (
             >
               <i class="fa fa-twitter"></i>
             </a>
-            <a class="social-instagram" href="#">
+            <a
+              class="social-instagram"
+              href="https://instagram.com/just_junaid_here/"
+              target="_blank"
+            >
               <i class="fa fa-instagram"></i>
             </a>
           </div>
