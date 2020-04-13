@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 const Body = styled.body`
   box-sizing: border-box;
+  margin: 0;
 
   &::selection {
     background: #74b4ff;
@@ -33,7 +34,6 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="/assets/js/page.min.js"></script>
         </Body>
       </html>
     )

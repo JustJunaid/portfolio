@@ -1,7 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
+import { Link } from "gatsby"
+import "./Navbar.css"
 
 export default function Navbar() {
   return (
-    <div>Navbar</div>
+    <header class="custom-navbar-header">
+      <h1 class="logo">
+        <a href="#">Logo</a>
+      </h1>
+      <ul class="main-nav">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Portfolio</a>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
+    </header>
   )
 }
