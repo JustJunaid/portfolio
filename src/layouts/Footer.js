@@ -12,10 +12,18 @@ const Footer = () => (
         </div>
         <div className="col-lg-6 col-sm-12 text-center text-md-right">
           <div class="social social-sm social-bg-brand social-cycling">
-            <a class="social-facebook" href="#">
-              <i class="fa fa-facebook"></i>
+            <a
+              class="social-git"
+              href="https://github.com/justjunaid"
+              target="_blank"
+            >
+              <i class="fa fa-github"></i>
             </a>
-            <a class="social-twitter" href="#">
+            <a
+              class="social-twitter"
+              href="https://twitter.com/junaid210_"
+              target="_blank"
+            >
               <i class="fa fa-twitter"></i>
             </a>
             <a class="social-instagram" href="#">

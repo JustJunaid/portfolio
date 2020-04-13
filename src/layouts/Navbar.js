@@ -4,16 +4,13 @@ import "./Navbar.css"
 
 export default function Navbar() {
   return (
-    <header class="custom-navbar-header">
+    <header class="container custom-navbar-header">
       <h1 class="logo">
         <a href="#">Logo</a>
       </h1>
       <ul class="main-nav">
         <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <a href="#">About</a>
+          <Link to="/">About</Link>
         </li>
         <li>
           <a href="#">Portfolio</a>

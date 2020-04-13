@@ -4,68 +4,53 @@ import Layout from "../layouts/index"
 export default function contact() {
   return (
     <Layout>
-      <section className="section">
-        <div className="container">
-          <form className="row gap-y">
-            <div className="col-lg-7">
-              <h3>Contact Us</h3>
-              <br />
+      <section class="section" style={{ paddingTop: "2.5rem" }}>
+        <div class="container">
+          <h2 class="text-center">Let's Get In Touch</h2>
 
-              <div className="alert alert-success d-on-success">
+          <div class="row">
+            <form class="col-11 col-lg-6 mx-auto p-6 bg-gray rounded">
+              <div class="alert alert-success d-on-success">
                 We received your message and will contact you back soon.
               </div>
 
-              <div className="form-row">
-                <div className="form-group col-md-6">
+              <div class="form-row">
+                <div class="form-group col-md-6">
                   <input
-                    className="form-control form-control-lg"
+                    class="form-control form-control-lg"
                     type="text"
                     name="name"
-                    placeholder="Name"
+                    placeholder="Your Name"
+                    required="true"
                   />
                 </div>
 
-                <div className="form-group col-md-6">
+                <div class="form-group col-md-6">
                   <input
-                    className="form-control form-control-lg is-invalid"
+                    class="form-control form-control-lg"
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    placeholder="Your Email Address"
                   />
                 </div>
               </div>
 
-              <div className="form-group">
+              <div class="form-group">
                 <textarea
-                  className="form-control form-control-lg is-invalid"
+                  class="form-control form-control-lg"
                   rows="4"
-                  placeholder="Message"
+                  placeholder="Your Message"
                   name="message"
                 ></textarea>
               </div>
 
-              <button className="btn btn-lg btn-primary" type="submit">
-                Send message
-              </button>
-            </div>
-
-            <div className="col-lg-4 ml-auto text-center text-lg-left">
-              <hr className="d-lg-none" />
-              <h3>Find Us</h3>
-              <br />
-              <p>
-                2651 Main Street, Suit 124
-                <br />
-                >Seattle, WA, 98101
-              </p>
-              <p>
-                +1 (321) 654 9870
-                <br />
-                >+1 (987) 123 6548
-              </p>
-              <p>hello@thetheme.io</p>
-            </div>
-          </form>
+              <div class="text-center">
+                <button class="btn btn-lg btn-primary" type="submit">
+                  Submit Inquiry
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </Layout>

@@ -1,45 +1,56 @@
 import React from "react"
-import Link from "gatsby-link"
 import Layout from "../layouts/index"
 import styled from "styled-components"
 
-const H2 = styled.h2`
-  font-size: 2.10938rem;
-  color: #323d47;
-  letter-spacing: 0.5px;
+const StyledImageContainer = styled.div`
+  position: relative;
+  display: inline-block;
+`
+
+const StyledDiv = styled.div`
+  position: absolute;
+  width: 208px;
+  top: 0;
+  bottom: 0;
+  background: white;
+  opacity: 1;
+
+  .right {
+    right: 0;
+  }
 `
 
 export default () => (
   <Layout>
-    <header
-      class="header text-white h-fullscreen overflow-hidden"
-      style={{
-        backgroundImage: "linear-gradient(-45deg, #667eea 0%, #764ba2 100%)",
-      }}
-    >
-      <canvas
-        class="constellation"
-        data-radius="0"
-        width="1353"
-        height="623"
-      ></canvas>
-      <div class="container position-static">
+    <header class="header h-fullscreen" style={{ paddingTop: 40 }}>
+      <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-lg-7">
-            <h1 class="display-4 fw-500">Junaid Choudhary</h1>
-            <p class="lead mt-5 mb-7 mb-md-9 w-80">
-              <strong>TheSaaS</strong> is an elegant, modern and fully
-              customizable SaaS and WebApp template powered by Bootstrap 4
+          <div class="col-lg-6">
+            <h1 class="fw-600">
+              Hello World! <br />I am{" "}
+              <span class="text-warning">Junaid Choudhary.</span>
+              <br />A <span class="text-info">Full-Stack Developer.</span>
+            </h1>
+            <p class="lead mt-5 mb-8">
+              I usually code in JavaScript And this is probably the most
+              shittiest website i have ever built ;) <br />
+              The picture you see on your right is the most random picture of
+              me, will change it later.
             </p>
-            <a
-              class="btn btn-xl btn-round btn-outline-light w-200 px-6"
-              href="#section-demo"
-            >
-              Explore Demos
-            </a>
+            <p class="gap-xy">
+              <a class="btn btn-round btn-primary mw-200" href="#">
+                Check out the latest work
+              </a>
+            </p>
           </div>
 
-          <div class="col-lg-5 d-none d-lg-block"></div>
+          <div class="col-lg-5">
+            <StyledImageContainer>
+              <StyledDiv></StyledDiv>
+              <img src="../assets/img/junaid.jpg" alt="img" />
+              <StyledDiv className="right"></StyledDiv>
+            </StyledImageContainer>
+          </div>
         </div>
       </div>
     </header>
