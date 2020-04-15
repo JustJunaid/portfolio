@@ -60,7 +60,8 @@ export default function About() {
             className="col-lg-6 col-xs-12 image-div"
             id="image-div"
           >
-            {window.matchMedia("(max-width: 700px)").matches ? (
+            {typeof window !== "undefined" &&
+            window.matchMedia("(max-width: 700px)").matches ? (
               <StyledImgMobile src={mobileImageSrc}></StyledImgMobile>
             ) : (
               <StyledImgDesktop src={desktopImageSrc}></StyledImgDesktop>
