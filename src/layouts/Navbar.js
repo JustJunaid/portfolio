@@ -6,14 +6,14 @@ export default function Navbar() {
   return (
     <header class="container custom-navbar-header">
       <h1 class="logo">
-        <a href="#">Logo</a>
+        <Link to="/">Logo</Link>
       </h1>
       <ul class="main-nav">
         <li>
           <Link to="/">About</Link>
         </li>
         <li>
-          <a href="#">Portfolio</a>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

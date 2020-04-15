@@ -1,36 +1,36 @@
 import React from "react"
 
 const Footer = () => (
-  <footer class="footer">
-    <div class="container">
+  <footer className="footer">
+    <div className="container">
       <div className="row">
         <div className="col-lg-6 col-sm-12">
-          <p class="small">
+          <p className="small">
             Made with ❤️ by Junaid Choudhary | All rights reserved.
           </p>
         </div>
         <div className="col-lg-6 col-sm-12 text-center text-md-right">
-          <div class="social social-sm social-bg-brand social-cycling">
+          <div className="social social-sm social-bg-brand social-cycling">
             <a
-              class="social-git"
+              className="social-git"
               href="https://github.com/justjunaid"
               target="_blank"
             >
-              <i class="fa fa-github"></i>
+              <i className="fa fa-github"></i>
             </a>
             <a
-              class="social-twitter"
+              className="social-twitter"
               href="https://twitter.com/junaid210_"
               target="_blank"
             >
-              <i class="fa fa-twitter"></i>
+              <i className="fa fa-twitter"></i>
             </a>
             <a
-              class="social-instagram"
+              className="social-instagram"
               href="https://instagram.com/just_junaid_here/"
               target="_blank"
             >
-              <i class="fa fa-instagram"></i>
+              <i className="fa fa-instagram"></i>
             </a>
           </div>
         </div>
