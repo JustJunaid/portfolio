@@ -10,9 +10,9 @@ export default function contact() {
 
           <div class="row">
             <form class="col-11 col-lg-6 mx-auto p-6 bg-gray rounded">
-              <div class="alert alert-success d-on-success">
+              {/* <div class="alert alert-success d-on-success">
                 We received your message and will contact you back soon.
-              </div>
+              </div> */}
 
               <div class="form-row">
                 <div class="form-group col-md-6">

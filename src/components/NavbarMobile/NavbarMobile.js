@@ -39,6 +39,7 @@ export default function NavbarMobile() {
       <StyledContainerNavbarTop>
         <img
           src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/glowing-star.png"
+          // src="/assets/img/logo.jpeg"
           alt="Fire emoji"
           width="70"
         />
