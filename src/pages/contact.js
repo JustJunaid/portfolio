@@ -4,7 +4,7 @@ import Layout from "../layouts/index"
 export default function contact() {
   return (
     <Layout>
-      <section class="section" style={{ paddingTop: "2.5rem" }}>
+      <section class="section  mt-5">
         <div class="container">
           <h2 class="text-center">Let's Get In Touch</h2>
 

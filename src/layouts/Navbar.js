@@ -20,17 +20,17 @@ export default function Navbar() {
         <ul class="navigation__list">
           <li class="navigation__item">
             <Link to="/" class="navigation__link">
-              About
+              ABOUT
             </Link>
           </li>
           <li class="navigation__item">
             <Link to="/portfolio" class="navigation__link">
-              portfolio
+              PORTFOLIO
             </Link>
           </li>
           <li class="navigation__item">
-            <Link href="/contact" class="navigation__link">
-              Contact
+            <Link to="/contact" class="navigation__link">
+              CONTACT
             </Link>
           </li>
         </ul>

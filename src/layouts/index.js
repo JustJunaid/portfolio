@@ -6,11 +6,12 @@ import NavbarMobile from "../components/NavbarMobile/NavbarMobile"
 const index = ({ children }) => {
   return (
     <div>
-      {typeof window !== 'undefined' && window.matchMedia("(max-width: 700px)").matches ? (
+      {/* {typeof window !== 'undefined' && window.matchMedia("(max-width: 700px)").matches ? (
         <NavbarMobile />
       ) : (
         <Navbar />
-      )}
+      )} */}
+      <Navbar />
       {children}
       <Footer />
     </div>

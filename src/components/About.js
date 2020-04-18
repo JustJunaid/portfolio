@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const StyledImgMobile = styled.img`
   border-radius: 50%;
@@ -43,16 +44,19 @@ export default function About() {
               <span className="text-warning">Junaid Choudhary.</span>
               <br />A <span className="text-info">Full-Stack Developer.</span>
             </h1>
-            <p className="lead mt-5 mb-8">
+            <p className="mt-5 mb-8">
               I usually code in JavaScript And this is probably the most
               shittiest website i have ever built ;) <br />
               The picture you see on your right is the most random picture of
               me, will change it later.
             </p>
             <p className="gap-xy">
-              <a className="btn btn-round btn-primary mw-200" href="#subscribe">
+              <Link
+                to="/portfolio"
+                className="btn btn-round btn-primary mw-200"
+              >
                 Check out the latest work
-              </a>
+              </Link>
             </p>
           </StyledContentDiv>
 

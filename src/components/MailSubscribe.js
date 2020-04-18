@@ -2,10 +2,7 @@ import React from "react"
 
 export default function MailSubscribe() {
   return (
-    <section
-      class="section py-10"
-      style={{ backgroundImage: "url(../assets/img/bg/4.jpg)" }}
-    >
+    <section class="section py-10">
       <div class="container">
         <div class="row">
           <div class="col-md-8 col-xl-6 mx-auto">
