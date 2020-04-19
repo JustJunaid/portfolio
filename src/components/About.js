@@ -3,14 +3,15 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 const StyledImgMobile = styled.img`
-  border-radius: 50%;
+  border-radius: 10px;
   border: 2px solid lightskyblue;
+  width: 170px;
 `
 
 const StyledImgDesktop = styled.img`
+  margin-top: -3rem;
   margin-left: 10rem;
-  width: 250px;
-  border: 2px solid black;
+  border: 2px solid lightskyblue;
   border-radius: 20px;
 `
 
@@ -28,14 +29,13 @@ const StyledContentDiv = styled.div`
   }
 `
 
-const mobileImageSrc =
-  "https://lh3.googleusercontent.com/-Wk2Vcc-SbfQ/Xf4HszoFjtI/AAAAAAAAF2g/kh6EwibfGNkhzrkJ2yTqhAqLwB6F4cu6QCEwYBhgLKs0DAMBZVoCPYY5vDoxgAYO-FT4Mh5ggOZ1QtYJRFwrZ5EXwiEY8ncqB2jodNT4hSFukAw9eqTA2ulzXtYv6mtluLQZKab9TbPDqyuniI879nxqVrgnDy5wJdPVeE0hDhDW44cdkt4TxOke-OWQRZcgteQKwfEYbHyfA4oc-Yp-c-PvcWhbUamJ6GNPzy13vaENJc1kAWsDTn6C__-Mt1aLdcjLFF1rfJByaeLLCC7ebPln-lSgqaqS3AnGnJF614f0RkgknnlSCwftccz4LcgjrmunrmoeaGfqrJjilCuTAwd_77qSNw60gfMOqoV_EeTOHR_JqY8ZviohbtktbNCSQBEYLfvXI_3c9DltX8sF-7xeSteJbugvRY9XPshNiy5Kw9Hl97A78mgCG8Aacv0RrHx4FcF6Em7UYlRySgq9Jd3derNubP0DlbS95zIDiUKGBA5ciWqZenLCjBuPVKS3ItGqlJXGvN61-r5A9xTcDytQELfRnDBsLb7vIJTozO0QcWgHU5UWSTyaFAEV5yrG9a375F5RZ13FNT4PaW9IaMs8jVpDxxQVP9TC33mPSECfvJaQBhoHfA6MfS145faOlLoT00gsclzOqYUrvpasw7qXW9AU/w140-h139-p/2019-12-21.jpg"
+const mobileImageSrc = "/assets/img/junaidMobile.jpg"
 
-const desktopImageSrc = "/assets/img/junaid.jpg"
+const desktopImageSrc = "/assets/img/junaidMobile.jpg"
 
 export default function About() {
   return (
-    <header className="header h-fullscreen" style={{ paddingTop: 40 }}>
+    <header className="header">
       <div className="container">
         <div className="row gap-y align-items-center h-100">
           <StyledContentDiv className="col-lg-6 col-xs-12 mr-auto content-div">
@@ -45,10 +45,15 @@ export default function About() {
               <br />A <span className="text-info">Full-Stack Developer.</span>
             </h1>
             <p className="mt-5 mb-8">
-              I usually code in JavaScript And this is probably the most
-              shittiest website i have ever built ;) <br />
-              The picture you see on your right is the most random picture of
-              me, will change it later.
+              Junaid is a Javascript Developer over two years of experience in
+              Software Development. He specialises in developing web based
+              E-commerce applications, mergers and acquisitions, chat bots and
+              social networking applications using technologies such as Reactjs
+              and Nodejs. <br /> 
+              Junaid possesses good practical knowledge of project
+              management and is skilled in executing all facets of project
+              lifecycle including scope definition, requirements gathering &
+              building, deployment and production support.
             </p>
             <p className="gap-xy">
               <Link

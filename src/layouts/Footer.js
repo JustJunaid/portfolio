@@ -4,12 +4,12 @@ const Footer = () => (
   <footer className="footer">
     <div className="container">
       <div className="row">
-        <div className="col-lg-6 col-sm-12">
+        <div className="col-lg-6 col-xs-12">
           <p className="small">
-            Made with ❤️ by Junaid Choudhary | All rights reserved.
+            Designed and Developed with ❤️ by Junaid | All rights reserved.
           </p>
         </div>
-        <div className="col-lg-6 col-sm-12 text-center text-md-right">
+        <div className="col-lg-6 col-xs-12 text-center text-md-right">
           <div className="social social-sm social-bg-brand social-cycling">
             <a
               className="social-git"
