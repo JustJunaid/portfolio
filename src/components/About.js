@@ -29,9 +29,7 @@ const StyledContentDiv = styled.div`
   }
 `
 
-const mobileImageSrc = "/assets/img/junaidMobile.jpg"
-
-const desktopImageSrc = "/assets/img/junaidMobile.jpg"
+const imageSrc = "/assets/img/junaidMobile.jpg"
 
 export default function About() {
   return (
@@ -49,11 +47,11 @@ export default function About() {
               Software Development. He specialises in developing web based
               E-commerce applications, mergers and acquisitions, chat bots and
               social networking applications using technologies such as Reactjs
-              and Nodejs. <br /> 
-              Junaid possesses good practical knowledge of project
-              management and is skilled in executing all facets of project
-              lifecycle including scope definition, requirements gathering &
-              building, deployment and production support.
+              and Nodejs. <br />
+              Junaid possesses good practical knowledge of project management
+              and is skilled in executing all facets of project lifecycle
+              including scope definition, requirements gathering & building,
+              deployment and production support.
             </p>
             <p className="gap-xy">
               <Link
@@ -71,9 +69,9 @@ export default function About() {
           >
             {typeof window !== "undefined" &&
             window.matchMedia("(max-width: 700px)").matches ? (
-              <StyledImgMobile src={mobileImageSrc}></StyledImgMobile>
+              <StyledImgMobile src={imageSrc}></StyledImgMobile>
             ) : (
-              <StyledImgDesktop src={desktopImageSrc}></StyledImgDesktop>
+              <StyledImgDesktop src={imageSrc}></StyledImgDesktop>
             )}
           </StyledImageDiv>
         </div>
