@@ -1,16 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
-
-const Body = styled.body`
-  box-sizing: border-box;
-  margin: 0;
-
-  &::selection {
-    background: #74b4ff;
-    color: #fff;
-  }
-`
 
 export default class HTML extends React.Component {
   render() {
@@ -26,15 +15,16 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
         </head>
-        <Body {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
+            style={{ backgroundColor: "rgb(35, 39, 65)", color: "#757575" }}
             key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-        </Body>
+        </body>
       </html>
     )
   }

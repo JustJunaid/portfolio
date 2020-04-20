@@ -4,7 +4,7 @@ import Layout from "../layouts/index"
 export default function contact() {
   return (
     <Layout>
-      <section class="section  mt-5">
+      <section class="section pt-0">
         <div class="container">
           <h2 class="text-center">Let's Get In Touch</h2>
 

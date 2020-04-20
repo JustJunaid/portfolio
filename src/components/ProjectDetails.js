@@ -2,7 +2,7 @@ import React from "react"
 
 export default function ProjectDetails() {
   return (
-    <section class="section bb-1">
+    <section class="section bb-1 pt-0">
       <div class="container">
         <div className="pb-6">
           <h1 class="display-4">Personal Portfolio</h1>

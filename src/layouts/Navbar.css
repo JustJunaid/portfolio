@@ -30,7 +30,7 @@
   display: none;
 }
 .navigation__button {
-  background-color: #c3c3c3;
+  background-color: #50a1ff;
   height: 4rem;
   width: 4rem;
   position: fixed;
@@ -49,7 +49,7 @@
   position: fixed;
   top: 2.5rem;
   right: 2.5rem;
-  background-image: radial-gradient(#e6dada, #274046);
+  background: linear-gradient(to right, #000428, #004e92);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -113,7 +113,7 @@
   display: inline-block;
   width: 2rem;
   height: 2px;
-  background-color: #fff;
+  background-color: whitesmoke;
 }
 .navigation__icon::before,
 .navigation__icon::after {

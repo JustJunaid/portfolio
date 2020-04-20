@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import NavbarMobile from "../components/NavbarMobile/NavbarMobile"
+import ParticleBackground from "../components/ParticleBackground"
 
 const index = ({ children }) => {
   return (
@@ -12,6 +13,7 @@ const index = ({ children }) => {
         <Navbar />
       )} */}
       <Navbar />
+      <ParticleBackground />
       {children}
       <Footer />
     </div>
