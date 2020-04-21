@@ -4,7 +4,7 @@ import Layout from "../layouts"
 export default function about() {
   return (
     <Layout>
-      <section class="section text-white p-0">
+      <section class="section p-0">
         <div class="container-wide">
           <div class="row no-gutters">
             <div

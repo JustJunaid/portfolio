@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../layouts"
-import About from "../components/About"
+import Home from "../components/Home"
 // import MailSubscribe from "../components/MailSubscribe"
 
 export default () => (
   <Layout>
-    <About />
+    <Home />
     {/* <MailSubscribe /> */}
   </Layout>
 )

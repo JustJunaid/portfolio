@@ -4,12 +4,15 @@ import Layout from "../layouts/index"
 export default function contact() {
   return (
     <Layout>
-      <section class="section pt-0">
+      <section
+        class="section pt-0"
+        style={{ minHeight: "calc(100vh - 215px)" }}
+      >
         <div class="container">
           <h2 class="text-center">Let's Get In Touch</h2>
 
           <div class="row">
-            <form class="col-11 col-lg-6 mx-auto p-6 bg-gray rounded">
+            <form class="col-11 col-lg-6 mx-auto p-6 rounded">
               {/* <div class="alert alert-success d-on-success">
                 We received your message and will contact you back soon.
               </div> */}

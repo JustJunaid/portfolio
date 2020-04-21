@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./Navbar.css"
-// import styled from "styled-components"
 
 const LinkStyle = {
   background: "white",
@@ -19,27 +18,6 @@ const LinkStyle = {
   boxShadow:
     "0 8px 16px 0 rgba(154, 205, 50, 0.2), 0 6px 20px 0 rgba(154, 205, 50, 0.19)",
 }
-
-// const StyledLink = styled(Link)`
-//   background: white;
-//   border-radius: 10rem;
-//   padding: 10px 38px 10px;
-//   font-size: 13;
-//   color: #fff;
-//   background-color: #50a1ff;
-//   border: 2px solid yellowgreen;
-//   display: inline-block;
-//   font-weight: 600;
-//   text-align: center;
-//   vertical-align: middle;
-//   margin: 1rem;
-//   box-shadow: 0 8px 16px 0 rgba(154, 205, 50, 0.2),
-//     0 6px 20px 0 rgba(154, 205, 50, 0.19);
-//   :hover {
-//     transform: translateY(-0.25em);
-//   }
-// `
-
 const ActiveLinkStyle = {
   ...LinkStyle,
   pointerEvents: "none",

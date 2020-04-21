@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 
 const StyledP = styled.p`
   font-size: 20px;
-  color: #fff;
 
   @media only screen and (max-width: 600px) {
     font-size: 16px;
