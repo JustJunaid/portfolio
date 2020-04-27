@@ -10,7 +10,7 @@ const Footer = () => (
           </p>
         </div>
         <div className="col-lg-6 col-xs-12 text-center text-md-right">
-          <div className="social social-sm social-bg-brand social-cycling">
+          <div className="social social-bg-brand social-cycling">
             <a
               className="social-git"
               href="https://github.com/justjunaid"
