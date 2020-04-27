@@ -3,12 +3,11 @@ import { Link } from "gatsby"
 import "./Navbar.css"
 
 const LinkStyle = {
-  background: "white",
+  background: "#50a1ff",
   borderRadius: "10rem",
   padding: "10px 38px 10px",
   fontSize: 13,
   color: "#fff",
-  backgroundColor: "#50a1ff",
   border: "2px solid yellowgreen",
   display: "inline-block",
   fontWeight: 600,
@@ -18,10 +17,12 @@ const LinkStyle = {
   boxShadow:
     "0 8px 16px 0 rgba(154, 205, 50, 0.2), 0 6px 20px 0 rgba(154, 205, 50, 0.19)",
 }
+
 const ActiveLinkStyle = {
   ...LinkStyle,
   pointerEvents: "none",
   transform: "none",
+  background: "none",
 }
 
 const NavLinks = [
@@ -34,8 +35,14 @@ const NavLinks = [
     text: "ABOUT",
   },
   {
+    externalLink: true,
+    to:
+      "https://docs.google.com/document/d/1j2WUgTCgqhP5LnB6z4iFAcrElFzEiFrqCY75qm_HTkI/edit",
+    text: "RESUME",
+  },
+  {
     to: "/portfolio",
-    text: "PORTFOLIO",
+    text: "PORTFOLIO (IN DEV)",
   },
   {
     to: "/contact",
@@ -45,35 +52,45 @@ const NavLinks = [
 
 export default function Navbar() {
   return (
-    <div class="navigation">
+    <div className="navigation">
       <img
-        style={{ height: 120, clipPath: "inset(25%)", marginLeft: -25 }}
-        src="/assets/img/logo.jpeg"
+        style={{ height: 65, margin: "17px 0 10px 5px" }}
+        src="/assets/img/JC_logo.svg"
         alt=""
       />
       <input
         type="checkbox"
-        class="navigation__checkbox"
+        className="navigation__checkbox"
         id="navigation-toggle"
       />
-      <label for="navigation-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
+      <label htmlFor="navigation-toggle" className="navigation__button">
+        <span className="navigation__icon">&nbsp;</span>
       </label>
 
-      <div class="navigation__background">&nbsp;</div>
+      <div className="navigation__background">&nbsp;</div>
 
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          {NavLinks.map(({ to, text }) => (
-            <li>
-              <Link
-                to={to}
-                style={LinkStyle}
-                activeStyle={ActiveLinkStyle}
-                activeClassName="active"
-              >
-                {text}
-              </Link>
+      <nav className="navigation__nav">
+        <ul className="navigation__list">
+          {NavLinks.map(({ to, text, externalLink }, index) => (
+            <li key={index}>
+              {externalLink ? (
+                <a
+                  style={LinkStyle}
+                  href="https://docs.google.com/document/d/1j2WUgTCgqhP5LnB6z4iFAcrElFzEiFrqCY75qm_HTkI/edit"
+                  target="_blank"
+                >
+                  RESUME
+                </a>
+              ) : (
+                <Link
+                  to={to}
+                  style={LinkStyle}
+                  activeStyle={ActiveLinkStyle}
+                  activeClassName="active"
+                >
+                  {text}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
