@@ -16,21 +16,21 @@ const Footer = () => (
               href="https://github.com/justjunaid"
               target="_blank"
             >
-              <i className="fa fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a
               className="social-twitter"
               href="https://twitter.com/junaid210_"
               target="_blank"
             >
-              <i className="fa fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               className="social-instagram"
               href="https://instagram.com/just_junaid_here/"
               target="_blank"
             >
-              <i className="fa fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
           </div>
         </div>

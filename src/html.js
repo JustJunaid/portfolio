@@ -26,6 +26,10 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         </body>
+        <script
+          src="https://kit.fontawesome.com/7e32bdc1ab.js"
+          crossorigin="anonymous"
+        ></script>
       </html>
     )
   }

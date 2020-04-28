@@ -12,8 +12,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Junaid Portfolio`,
+        short_name: `Junaid`,
         start_url: `/`,
         background_color: `#232741`,
         theme_color: `#232741`,
