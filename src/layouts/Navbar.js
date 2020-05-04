@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import "./Navbar.css"
+import { trackCustomEvent, OutboundLink } from "gatsby-plugin-google-analytics"
 
 const LinkStyle = {
   background: "#50a1ff",
@@ -50,6 +51,14 @@ const NavLinks = [
   },
 ]
 
+const handleTrackCustomEvent = (buttonText) => {
+  trackCustomEvent({
+    category: "Portfolio Website",
+    action: `${buttonText}_CLICK`,
+    label: `${buttonText}_CLICK`,
+  })
+}
+
 export default function Navbar() {
   return (
     <div className="navigation">
@@ -63,7 +72,11 @@ export default function Navbar() {
         className="navigation__checkbox"
         id="navigation-toggle"
       />
-      <label htmlFor="navigation-toggle" className="navigation__button">
+      <label
+        htmlFor="navigation-toggle"
+        className="navigation__button"
+        onClick={() => handleTrackCustomEvent("HAMBURGER_ICON")}
+      >
         <span className="navigation__icon">&nbsp;</span>
       </label>
 
@@ -74,19 +87,20 @@ export default function Navbar() {
           {NavLinks.map(({ to, text, externalLink }, index) => (
             <li key={index}>
               {externalLink ? (
-                <a
+                <OutboundLink
                   style={LinkStyle}
                   href="https://docs.google.com/document/d/1j2WUgTCgqhP5LnB6z4iFAcrElFzEiFrqCY75qm_HTkI/edit"
                   target="_blank"
                 >
                   RESUME
-                </a>
+                </OutboundLink>
               ) : (
                 <Link
                   to={to}
                   style={LinkStyle}
                   activeStyle={ActiveLinkStyle}
                   activeClassName="active"
+                  onClick={() => handleTrackCustomEvent(text)}
                 >
                   {text}
                 </Link>
