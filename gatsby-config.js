@@ -1,15 +1,6 @@
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        workboxConfig: {
-          globPatterns: ["**/*"],
-        },
-        precachePages: [`/about/`, `/portfolio/`],
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Junaid Portfolio`,
@@ -21,6 +12,15 @@ module.exports = {
         icon: `static/assets/img/JC_logo.svg`,
         cache_busting_mode: "none",
         crossOrigin: `use-credentials`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: ["**/*"],
+        },
+        precachePages: [`/about/`, `/portfolio/`],
       },
     },
     {
