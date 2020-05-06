@@ -20,6 +20,9 @@ export default function about() {
                 <b>About</b>
               </h4>
               <p class="lead">
+                <b>
+                  Super Official Third Person Bio™: <br />
+                </b>
                 Junaid is a Javascript Developer over two years of experience in
                 Software Development. He specialises in developing web based
                 E-commerce applications, mergers and acquisitions, chat bots and
