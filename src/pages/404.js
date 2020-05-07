@@ -1,8 +1,10 @@
 import React from "react"
+import SEO from "../components/Seo"
 
 export default function NotFound() {
   return (
     <main className="main-content text-center pb-lg-8">
+      <SEO title="JustJunaid | Page Not Found" />
       <div className="container">
         <h1 className="display-1 text-muted mb-7">Page Not Found</h1>
         <p className="lead">

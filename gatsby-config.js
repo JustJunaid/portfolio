@@ -1,4 +1,13 @@
 module.exports = {
+  siteMetadata: {
+    title: "JustJunaid | Junaid Portfolio",
+    titleTemplate: "%s · Digital Analyst",
+    description:
+      "This is portfolio website of Junaid Choudhary. Another Self-taught full-stack Developer",
+    url: "https://www.justjunaid.com", // No trailing slash allowed!
+    image: "/assets/img/junaid.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@junaid210_",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,

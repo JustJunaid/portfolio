@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../layouts"
 import ProjectDetails from "../components/ProjectDetails"
 import HitMeUp from "../components/HitMeUp"
+import SEO from "../components/Seo"
 
 export default function portfolio() {
   return (
     <Layout>
+      <SEO />
       <main class="main-content">
         <ProjectDetails />
 

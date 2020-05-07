@@ -1,9 +1,11 @@
 import React from "react"
 import Layout from "../layouts"
+import SEO from "../components/Seo"
 
 export default function about() {
   return (
     <Layout>
+      <SEO title="JustJunaid | About" />
       <section class="section p-0">
         <div class="container-wide">
           <div class="row no-gutters">
