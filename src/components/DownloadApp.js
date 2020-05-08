@@ -7,7 +7,7 @@ export default function DownloadApp() {
     e.preventDefault()
     // Stash the event so it can be triggered later.
     window.deferredPrompt = e
-    showButton(true)
+    setShowButton(true)
   })
 
   window.addEventListener("appinstalled", (evt) => {
