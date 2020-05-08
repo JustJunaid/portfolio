@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 export default function DownloadApp() {
-  const [showButton, setShowButton] = useState(true)
+  const [showButton, setShowButton] = useState(false)
 
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault()
@@ -29,12 +29,12 @@ export default function DownloadApp() {
     })
   }
 
-  //   if (!showButton) return null
+  if (!showButton) return null
 
   return (
     <div
       className="iconbox text-white bg-primary"
-      style={{ position: "fixed", bottom: 7, right: 7, borderRadius: 5 }}
+      style={{ position: "fixed", bottom: 0, right: 0, borderRadius: 5 }}
       onClick={handleDownloadClick}
     >
       <i className="fa fa-plus" aria-hidden="true"></i>
