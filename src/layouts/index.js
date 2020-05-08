@@ -3,10 +3,11 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import NavbarMobile from "../components/NavbarMobile/NavbarMobile"
 import ParticleBackground from "../components/ParticleBackground"
+import DownloadApp from "../components/DownloadApp"
 
 const index = ({ children }) => {
   return (
-    <div>
+    <>
       {/* {typeof window !== 'undefined' && window.matchMedia("(max-width: 700px)").matches ? (
         <NavbarMobile />
       ) : (
@@ -15,8 +16,9 @@ const index = ({ children }) => {
       <Navbar />
       <ParticleBackground />
       {children}
+      {typeof window !== "undefined" && <DownloadApp />}
       <Footer />
-    </div>
+    </>
   )
 }
 
