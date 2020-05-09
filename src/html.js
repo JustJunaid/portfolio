@@ -1,8 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { StateProvider } from "./state"
+import { reducer, initialState } from "./reducer/layoutReducer"
 
 export default class HTML extends React.Component {
   render() {
+    console.log("this.props", this.props)
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -18,12 +21,14 @@ export default class HTML extends React.Component {
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
-          <div
-            style={{ backgroundColor: "rgb(35, 39, 65)", color: "#757575" }}
-            key={`body`}
-            id="___gatsby"
-            dangerouslySetInnerHTML={{ __html: this.props.body }}
-          />
+          <StateProvider reducer={reducer} initialState={initialState}>
+            <div
+              style={{ backgroundColor: "rgb(35, 39, 65)", color: "#757575" }}
+              key={`body`}
+              id="___gatsby"
+              dangerouslySetInnerHTML={{ __html: this.props.body }}
+            />
+          </StateProvider>
           {this.props.postBodyComponents}
         </body>
         <script

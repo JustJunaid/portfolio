@@ -1,20 +1,33 @@
 import React, { useState } from "react"
+import { handleTrackCustomEvent } from "../utils"
+import { useStateValue } from "../state"
 
 export default function DownloadApp() {
-  const [showButton, setShowButton] = useState(false)
+  //   const [showButton, setShowButton] = useState(false)
+  const [showButton, dispatch] = useStateValue()
 
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault()
     // Stash the event so it can be triggered later.
     window.deferredPrompt = e
-    setShowButton(true)
+    dispatch({
+      type: "toggleDownloadButton",
+      showButton: true,
+    })
+    // setShowButton(true)
   })
 
   window.addEventListener("appinstalled", (evt) => {
-    setShowButton(false)
+    handleTrackCustomEvent("APP_INSTALLED_EVENT")
+    // setShowButton(false)
+    dispatch({
+      type: "toggleDownloadButton",
+      showButton: false,
+    })
   })
 
   const handleDownloadClick = () => {
+    handleTrackCustomEvent("APP_DOWNLOAD_CLICK")
     const promptEvent = window.deferredPrompt
     if (!promptEvent) return
     // Show the install prompt.
@@ -25,7 +38,11 @@ export default function DownloadApp() {
       // prompt() can only be called once.
       window.deferredPrompt = null
       // Hide the install button.
-      setShowButton(false)
+      //   setShowButton(false)
+      dispatch({
+        type: "toggleDownloadButton",
+        showButton: false,
+      })
     })
   }
 
