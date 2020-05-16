@@ -19,7 +19,6 @@ export default class HTML extends React.Component {
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
           <div
-            style={{ backgroundColor: "rgb(35, 39, 65)", color: "#757575" }}
             key={`body`}
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}
@@ -28,7 +27,7 @@ export default class HTML extends React.Component {
         </body>
         <script
           src="https://kit.fontawesome.com/7e32bdc1ab.js"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         ></script>
       </html>
     )

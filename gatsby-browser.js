@@ -1,6 +1,10 @@
 import React, { Fragment } from "react"
-import Layout from "./src/layouts"
+import { StateProvider } from "./src/state"
 import DownloadApp from "./src/components/DownloadApp"
+
+export const wrapRootElement = ({ element }) => {
+  return <StateProvider>{element}</StateProvider>
+}
 
 export const wrapPageElement = ({ element, props }) => (
   <Fragment {...props}>
