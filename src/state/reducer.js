@@ -1,14 +1,13 @@
 export const initialState = {
-  showButton: true,
   darkTheme: true,
 }
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case "toggleDownloadButton":
+    case "toggleDarkTheme":
       return {
         ...state,
-        showButton: action.showButton,
+        darkTheme: action.darkTheme,
       }
 
     default:

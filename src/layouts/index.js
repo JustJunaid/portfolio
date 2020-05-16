@@ -1,14 +1,20 @@
-import React, { createContext } from "react"
+import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import NavbarMobile from "../components/NavbarMobile/NavbarMobile"
 import ParticleBackground from "../components/ParticleBackground"
-import DownloadApp from "../components/DownloadApp"
 import ToggleDarkTheme from "../components/ToggleDarkTheme"
+import { useStateValue } from "../state"
 
-const index = ({ children }) => {
+const Index = ({ children }) => {
+  const [state, dispatch] = useStateValue()
   return (
-    <>
+    <div
+      style={{
+        backgroundColor: state.darkTheme ? "rgb(35, 39, 65)" : "#87CEFA",
+        color: "#757575",
+      }}
+    >
       {/* {typeof window !== 'undefined' && window.matchMedia("(max-width: 700px)").matches ? (
         <NavbarMobile />
       ) : (
@@ -17,11 +23,10 @@ const index = ({ children }) => {
       <Navbar />
       <ParticleBackground />
       {children}
-      <ToggleDarkTheme />
-      {typeof window !== "undefined" && <DownloadApp />}
+      <ToggleDarkTheme state={state} dispatch={dispatch} />
       <Footer />
-    </>
+    </div>
   )
 }
 
-export default index
+export default Index

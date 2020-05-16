@@ -7,7 +7,8 @@ const Footer = () => (
       <div className="row">
         <div className="col-lg-6 col-xs-12">
           <p className="small">
-            Designed and Developed with ❤️ by Junaid | All rights reserved.
+            © {new Date().getFullYear()}, Designed and Developed with ❤️ by
+            Junaid | All rights reserved.
           </p>
         </div>
         <div className="col-lg-6 col-xs-12 text-center text-md-right">
