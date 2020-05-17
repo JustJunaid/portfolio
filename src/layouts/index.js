@@ -3,15 +3,16 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import NavbarMobile from "../components/NavbarMobile/NavbarMobile"
 import ParticleBackground from "../components/ParticleBackground"
-import ToggleDarkTheme from "../components/ToggleDarkTheme"
 import { useStateValue } from "../state"
 
 const Index = ({ children }) => {
-  const [state, dispatch] = useStateValue()
+  const [state] = useStateValue()
   return (
     <div
       style={{
-        backgroundColor: state.darkTheme ? "rgb(35, 39, 65)" : "#87CEFA",
+        backgroundColor: state.darkTheme
+          ? "rgb(35, 39, 65)"
+          : "#87CEFA",
         color: "#757575",
       }}
     >
@@ -23,7 +24,6 @@ const Index = ({ children }) => {
       <Navbar />
       <ParticleBackground />
       {children}
-      <ToggleDarkTheme state={state} dispatch={dispatch} />
       <Footer />
     </div>
   )

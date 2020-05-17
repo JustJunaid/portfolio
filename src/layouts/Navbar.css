@@ -26,6 +26,11 @@
   }
 } */
 
+.navigation {
+  display: grid;
+  grid-template-columns: 80px auto 70px;
+}
+
 .navigation__checkbox {
   display: none;
 }

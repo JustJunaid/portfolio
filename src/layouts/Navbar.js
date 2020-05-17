@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import "./Navbar.css"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { handleTrackCustomEvent, NavLinks } from "../utils"
+import ToggleDarkTheme from "../components/ToggleDarkTheme"
 
 const LinkStyle = {
   background: "#50a1ff",
@@ -35,6 +36,7 @@ export default function Navbar() {
         src="/assets/img/JC_logo.svg"
         alt=""
       />
+      <ToggleDarkTheme />
       <input
         type="checkbox"
         className="navigation__checkbox"
