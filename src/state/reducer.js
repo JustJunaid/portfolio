@@ -4,7 +4,8 @@ export const initialState = {
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    case "toggleDarkTheme":
+    case 'toggleDarkTheme':
+      // localStorage.setItem('darkTheme', action.darkTheme)
       return {
         ...state,
         darkTheme: action.darkTheme,
