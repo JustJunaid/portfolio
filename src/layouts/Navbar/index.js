@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import './Navbar.css'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
@@ -10,9 +10,15 @@ import {
   ActiveLinkStyle,
 } from './Navbar.styles'
 import { useStateValue } from '../../state'
+import { useState } from 'react'
 
 export default function Navbar() {
   const [state, dispatch] = useStateValue()
+  const [showToggleButton, setShowToggleButton] = useState(false)
+  useEffect(() => {
+    const timeout = setTimeout(() => setShowToggleButton(true), 1000)
+    return () => clearTimeout(timeout)
+  }, [])
   return (
     <div className="navigation">
       <img
@@ -20,7 +26,9 @@ export default function Navbar() {
         src="/assets/img/JC_logo.svg"
         alt=""
       />
-      <ToggleDarkTheme state={state} dispatch={dispatch} />
+      {showToggleButton && (
+        <ToggleDarkTheme state={state} dispatch={dispatch} />
+      )}
       <input
         type="checkbox"
         className="navigation__checkbox"
