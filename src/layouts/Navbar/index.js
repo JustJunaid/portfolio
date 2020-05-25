@@ -21,11 +21,17 @@ export default function Navbar() {
   }, [])
   return (
     <div className="navigation">
-      <img
-        style={{ height: 65, margin: '17px 0 10px 5px' }}
-        src="/assets/img/JC_logo.svg"
-        alt=""
-      />
+      <Link
+        style={{ zIndex: 1 }}
+        to="/"
+        onClick={() => handleTrackCustomEvent('/')}
+      >
+        <img
+          style={{ height: 65, margin: '17px 0 10px 5px' }}
+          src="/assets/img/JC_logo.svg"
+          alt=""
+        />
+      </Link>
       {showToggleButton && (
         <ToggleDarkTheme state={state} dispatch={dispatch} />
       )}
