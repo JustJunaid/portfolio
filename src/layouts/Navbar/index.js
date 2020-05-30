@@ -16,7 +16,7 @@ export default function Navbar() {
   const [state, dispatch] = useStateValue()
   const [showToggleButton, setShowToggleButton] = useState(false)
   useEffect(() => {
-    const timeout = setTimeout(() => setShowToggleButton(true), 1000)
+    const timeout = setTimeout(() => setShowToggleButton(true), 500)
     return () => clearTimeout(timeout)
   }, [])
   return (
