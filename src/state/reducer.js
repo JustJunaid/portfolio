@@ -1,14 +1,16 @@
 export const initialState = {
   darkTheme:
-    localStorage.getItem('darkTheme') === null
+    typeof window !== 'undefined' && localStorage.getItem('darkTheme') === null
       ? true
-      : JSON.parse(localStorage.getItem('darkTheme')),
+      : typeof window !== 'undefined' &&
+        JSON.parse(localStorage.getItem('darkTheme')),
 }
 
 export const reducer = (state, action) => {
   switch (action.type) {
     case 'toggleDarkTheme':
-      localStorage.setItem('darkTheme', action.darkTheme)
+      typeof window !== 'undefined' &&
+        localStorage.setItem('darkTheme', action.darkTheme)
       return {
         ...state,
         darkTheme: action.darkTheme,
