@@ -1,5 +1,9 @@
 export const LStorage = {
-  get: (key) => typeof window !== 'undefined' && localStorage.getItem(key),
+  get: (key) => {
+    if (typeof window !== 'undefined' && localStorage.getItem(key))
+      return JSON.parse(localStorage.getItem(key))
+    else return null
+  },
   set: (key, value) =>
     typeof window !== 'undefined' && localStorage.setItem(key, value),
 }
