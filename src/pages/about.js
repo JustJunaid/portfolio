@@ -1,6 +1,6 @@
-import React from "react"
-import Layout from "../layouts"
-import SEO from "../components/Seo"
+import React from "react";
+import Layout from "../layouts";
+import SEO from "../components/Seo";
 
 export default function about() {
   return (
@@ -40,5 +40,5 @@ export default function about() {
         </div>
       </section>
     </Layout>
-  )
+  );
 }

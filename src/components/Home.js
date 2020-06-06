@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const StyledP = styled.p`
   font-size: 20px;
@@ -8,7 +8,7 @@ const StyledP = styled.p`
   @media only screen and (max-width: 600px) {
     font-size: 16px;
   }
-`
+`;
 
 export default function About() {
   return (
@@ -38,5 +38,5 @@ export default function About() {
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import Layout from "../layouts/index"
-import SEO from "../components/Seo"
-import ContactForm from "../components/ContactForm"
+import React, { useState } from "react";
+import Layout from "../layouts/index";
+import SEO from "../components/Seo";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -29,7 +29,7 @@ const Contact = () => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

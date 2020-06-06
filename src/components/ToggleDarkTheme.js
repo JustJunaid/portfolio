@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
-import Moon from '../../static/assets/icons/moon'
-import Sun from '../../static/assets/icons/sun'
+import React from "react";
+import styled from "styled-components";
+import Moon from "../../static/assets/icons/moon";
+import Sun from "../../static/assets/icons/sun";
 
 const ToggleContainer = styled.button`
   border-color: black;
@@ -24,26 +24,26 @@ const ToggleContainer = styled.button`
 
     &:first-child {
       transform: ${({ darkTheme }) =>
-        darkTheme ? 'translateY(0)' : 'translateY(-100px)'};
+        darkTheme ? "translateY(0)" : "translateY(-100px)"};
     }
 
     &:nth-child(2) {
       transform: ${({ darkTheme }) =>
-        darkTheme ? 'translateY(-100px)' : 'translateY(0)'};
+        darkTheme ? "translateY(-100px)" : "translateY(0)"};
     }
   }
-`
+`;
 
 export default function ToggleDarkTheme({ state, dispatch }) {
   return (
     <ToggleContainer
       darkTheme={state.darkTheme}
       onClick={() =>
-        dispatch({ type: 'toggleDarkTheme', darkTheme: !state.darkTheme })
+        dispatch({ type: "toggleDarkTheme", darkTheme: !state.darkTheme })
       }
     >
       <Moon />
       <Sun />
     </ToggleContainer>
-  )
+  );
 }

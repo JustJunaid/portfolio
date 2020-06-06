@@ -1,12 +1,12 @@
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
+import { trackCustomEvent } from "gatsby-plugin-google-analytics";
 
 export const handleTrackCustomEvent = (buttonText) => {
   trackCustomEvent({
     category: "Portfolio Website",
     action: `${buttonText}_CLICK`,
     label: `${buttonText}_CLICK`,
-  })
-}
+  });
+};
 
 export const NavLinks = [
   {
@@ -31,4 +31,4 @@ export const NavLinks = [
     to: "/contact",
     text: "CONTACT",
   },
-]
+];

@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
 export default function HitMeUp() {
   return (
@@ -13,5 +13,5 @@ export default function HitMeUp() {
         Hit me Up
       </Link>
     </section>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import React from "react"
-import { handleTrackCustomEvent } from "../utils"
+import React from "react";
+import { handleTrackCustomEvent } from "../utils";
 
 export default function ContactForm() {
   return (
@@ -48,5 +48,5 @@ export default function ContactForm() {
         </button>
       </div>
     </>
-  )
+  );
 }

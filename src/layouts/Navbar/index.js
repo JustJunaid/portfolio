@@ -1,33 +1,33 @@
-import React, { useEffect } from 'react'
-import { Link } from 'gatsby'
-import './Navbar.css'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { handleTrackCustomEvent, NavLinks } from '../../utils'
-import ToggleDarkTheme from '../../components/ToggleDarkTheme'
+import React, { useEffect } from "react";
+import { Link } from "gatsby";
+import "./Navbar.css";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { handleTrackCustomEvent, NavLinks } from "../../utils";
+import ToggleDarkTheme from "../../components/ToggleDarkTheme";
 import {
   StyledNavBackground,
   LinkStyle,
   ActiveLinkStyle,
-} from './Navbar.styles'
-import { useStateValue } from '../../state'
-import { useState } from 'react'
+} from "./Navbar.styles";
+import { useStateValue } from "../../state";
+import { useState } from "react";
 
 export default function Navbar() {
-  const [state, dispatch] = useStateValue()
-  const [showToggleButton, setShowToggleButton] = useState(false)
+  const [state, dispatch] = useStateValue();
+  const [showToggleButton, setShowToggleButton] = useState(false);
   useEffect(() => {
-    const timeout = setTimeout(() => setShowToggleButton(true), 500)
-    return () => clearTimeout(timeout)
-  }, [])
+    const timeout = setTimeout(() => setShowToggleButton(true), 500);
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <div className="navigation">
       <Link
         style={{ zIndex: 1 }}
         to="/"
-        onClick={() => handleTrackCustomEvent('/')}
+        onClick={() => handleTrackCustomEvent("/")}
       >
         <img
-          style={{ height: 65, margin: '17px 0 10px 5px' }}
+          style={{ height: 65, margin: "17px 0 10px 5px" }}
           src="/assets/img/JC_logo.svg"
           alt=""
         />
@@ -43,7 +43,7 @@ export default function Navbar() {
       <label
         htmlFor="navigation-toggle"
         className="navigation__button"
-        onClick={() => handleTrackCustomEvent('HAMBURGER_ICON')}
+        onClick={() => handleTrackCustomEvent("HAMBURGER_ICON")}
       >
         <span className="navigation__icon">&nbsp;</span>
       </label>
@@ -83,5 +83,5 @@ export default function Navbar() {
         </ul>
       </nav>
     </div>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export default function MailSubscribe() {
   return (
@@ -36,5 +36,5 @@ export default function MailSubscribe() {
         </div>
       </div>
     </section>
-  )
+  );
 }

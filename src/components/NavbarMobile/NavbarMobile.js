@@ -1,7 +1,7 @@
-import React, { useState } from "react"
-import "./NavbarMobile.css"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React, { useState } from "react";
+import "./NavbarMobile.css";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const StyledNavbarContent = styled.div`
   height: 100vh;
@@ -10,12 +10,12 @@ const StyledNavbarContent = styled.div`
   margin-top: 2rem;
   text-align: center;
   font-size: 32px;
-`
+`;
 
 const StyledContainerNavbarTop = styled.div`
   display: flex;
   justify-content: space-between;
-`
+`;
 
 const Navbar = [
   {
@@ -30,10 +30,10 @@ const Navbar = [
     link: "/contact",
     text: "CONTACT",
   },
-]
+];
 
 export default function NavbarMobile() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="container">
       <StyledContainerNavbarTop>
@@ -70,5 +70,5 @@ export default function NavbarMobile() {
         </StyledNavbarContent>
       )}
     </div>
-  )
+  );
 }

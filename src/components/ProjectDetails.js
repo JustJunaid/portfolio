@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export default function ProjectDetails() {
   return (
@@ -34,5 +34,5 @@ export default function ProjectDetails() {
         </div>
       </div>
     </section>
-  )
+  );
 }

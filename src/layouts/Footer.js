@@ -1,5 +1,5 @@
-import React from "react"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
+import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Footer = () => (
   <footer className="footer">
@@ -39,6 +39,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

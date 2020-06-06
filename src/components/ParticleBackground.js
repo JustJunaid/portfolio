@@ -1,6 +1,6 @@
-import Particles from "react-particles-js"
-import React from "react"
-import styled from "styled-components"
+import Particles from "react-particles-js";
+import React from "react";
+import styled from "styled-components";
 
 const StyledParticleContainer = styled.div`
   position: fixed;
@@ -8,7 +8,7 @@ const StyledParticleContainer = styled.div`
   left: 0;
   right: 0;
   top: 0;
-`
+`;
 
 export default function ParticleBackground() {
   return (
@@ -68,5 +68,5 @@ export default function ParticleBackground() {
         }}
       />
     </StyledParticleContainer>
-  )
+  );
 }

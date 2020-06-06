@@ -1,8 +1,8 @@
-import React from "react"
-import Layout from "../layouts"
-import ProjectDetails from "../components/ProjectDetails"
-import HitMeUp from "../components/HitMeUp"
-import SEO from "../components/Seo"
+import React from "react";
+import Layout from "../layouts";
+import ProjectDetails from "../components/ProjectDetails";
+import HitMeUp from "../components/HitMeUp";
+import SEO from "../components/Seo";
 
 export default function portfolio() {
   return (
@@ -93,5 +93,5 @@ export default function portfolio() {
         <HitMeUp />
       </main>
     </Layout>
-  )
+  );
 }
