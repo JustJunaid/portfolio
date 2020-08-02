@@ -22,7 +22,7 @@ const Footer = () => (
             </OutboundLink>
             <OutboundLink
               className="social-twitter"
-              href="https://twitter.com/junaid210_"
+              href="https://twitter.com/JustJunaidHere"
               target="_blank"
             >
               <i className="fab fa-twitter"></i>
